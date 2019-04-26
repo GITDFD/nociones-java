@@ -1,0 +1,25 @@
+package ejemplo2;
+
+public class Espada {
+
+		// tipos de espada: katana, falcata, ...
+		private String tipo;
+
+		@Override
+		public String toString() {
+			return "Espada [tipo=" + tipo + "]";
+		}
+
+		public String getTipo() {
+			return tipo;
+		}
+
+		public void setTipo(String tipo) {
+			this.tipo = tipo;
+		}
+
+		//metodo para usar la espada
+		public void usar() {
+			System.out.println("espada de tipo " + tipo + " y corto que lo flipas.");
+		}
+}

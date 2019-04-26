@@ -1,0 +1,13 @@
+package ejemplo1;
+
+public class Main1 {
+	public static void main(String[] args) {
+		
+		//manera clasica de Java, pero Spring no lleva el control de esto.
+		Persona pers = new Persona();
+		pers.setNombre("Domingo");
+		pers.setEdad(45);
+		pers.setPeso(97.7);
+		
+	}
+}

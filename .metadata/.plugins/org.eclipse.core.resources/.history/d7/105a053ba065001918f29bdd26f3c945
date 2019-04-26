@@ -1,0 +1,7 @@
+package entidades;
+
+public class Direccion 
+{
+	public int cp = 07234; 					//si un numero empieza por cero se maneja en OCTAL mucho ojo
+	public String codigoPostal = "07234"; 	//no vamos a hacer operaciones aritmeticas NO usar el tipo "int"
+}

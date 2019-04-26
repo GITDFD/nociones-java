@@ -1,0 +1,10 @@
+package entidades;
+
+public class Empleado 
+{
+	
+	private String nombre;
+	private String dni;
+	private double salario;
+	
+}

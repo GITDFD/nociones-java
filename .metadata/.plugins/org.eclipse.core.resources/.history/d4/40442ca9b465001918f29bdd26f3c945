@@ -1,0 +1,17 @@
+package entidades;
+
+import java.util.ArrayList;
+
+public class Director extends Empleado
+{
+
+	//lista dinamica
+	private ArrayList<Empleado> listaEmpleados;
+	
+	@Override
+	public double calcularSueldo() 
+	{
+		return 0;
+	}
+	
+}

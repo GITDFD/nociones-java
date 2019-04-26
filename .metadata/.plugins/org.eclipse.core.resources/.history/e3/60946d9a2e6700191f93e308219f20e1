@@ -1,0 +1,39 @@
+package controladores;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/* 
+ * en TOMCAT para crear servlet se usa un concepto igual que Spring: inversion de control.
+ * este concepto nos dice que nosotros no vamos a gestionar directamente el ciclo de vida de este objeto servlet, lo hara tomcat
+ * el que lo haga.
+ * 
+ * no tenemos que hacer "new" ni tampoco hacer referencias a el para que siga vivo el objeto.
+ * 
+ * la anotacion "webservlet" le dice a tomcat que esta clase tiene que ser gestionada por el IoC (inversion de Control)
+ * la manera de acceder a este servlet va a ser segun el nombre que este dentro de la anotacion. 
+ * es el nombre que se usara en html en "action"
+ */
+
+@WebServlet("/ControladorUsuario")
+public class ControladorUsuario extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	
+	// procesa peticiones GET
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	// procesa peticiones POST, que en el fondo llama a doGET, pues son casi lo mismo.
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

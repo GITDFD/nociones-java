@@ -1,0 +1,17 @@
+package entidades;
+
+/* una interfaz tiene que estar bien definida y muy bien documentada.
+ * los comentarios que luego queramos que automaticamente se generen en info especial: JAVADOC: usar "/**"
+ */
+
+/**
+ * 
+ * interfaz que hace que los objetos puedan moverse, cada uno como corresponda
+ * objeto: coche y persona
+ * 
+ * @author Domingo.
+ *
+ */
+public interface Movible {
+
+}

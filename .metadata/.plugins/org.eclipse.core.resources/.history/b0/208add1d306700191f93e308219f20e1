@@ -1,0 +1,11 @@
+package modelo.negocio;
+
+
+/*
+ * esta capa se encarga del negocio vinculado a la aplicacion.
+ * la funcionalidad de la aplicacion.
+ */
+
+public class GestorUsuario {
+	
+}

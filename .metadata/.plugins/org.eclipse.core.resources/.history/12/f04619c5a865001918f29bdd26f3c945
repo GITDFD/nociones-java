@@ -1,0 +1,12 @@
+package javabeans;
+
+import javax.annotation.Generated;
+
+public class JavaBeanMain 
+{
+	public static void main(String[] args) 
+	{
+		Persona pers1 = new Persona("jose", -10, 95.5);
+		System.out.println(pers1.getPeso());
+	}
+}

@@ -1,0 +1,28 @@
+package ejemplo2;
+
+public class Guerrero {
+	
+	private String nombre;
+	private Espada espada;
+	@Override
+	public String toString() {
+		return "Guerrero [nombre=" + nombre + ", espada=" + espada + "]";
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public Espada getEspada() {
+		return espada;
+	}
+	public void setEspada(Espada espada) {
+		this.espada = espada;
+	}
+	
+	public void atacar() {
+		System.out.println("Soy " + nombre + " voy a atacar con ");
+		espada.usar();
+	};
+}

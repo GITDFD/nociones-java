@@ -1,0 +1,41 @@
+package modelo.persistencia;
+/*
+ * dao = data access object
+ * 
+ * capa de acceso a objetos de negocio: el 90% de las vences es una base de datos.
+ * 
+ * simulamos una base datos en memoria.
+ */
+
+import java.util.ArrayList;
+import modelo.entidades.Usuario;
+
+public class DaoUsuario {
+
+	private ArrayList<Usuario> listaUsuarios;
+	
+	//constructor por defecto.
+	private DaoUsuario() {
+		listaUsuarios = new ArrayList<>();
+		
+		Usuario usuario = new Usuario();  //da de alta la variable usuario de tipo Usuario
+
+		usuario.setNombre("Pepe");			//anyade el nombre y password a usuario
+		usuario.setPassword("qwerty");
+		listaUsuarios.add(usuario);			// y lo mueve a la lista de usuarios
+		
+		usuario = new Usuario();			//reutiliza la variable usuario para no perder el contenido, en otro espacio de memoria
+		usuario.setNombre("Ana");			//anyade nombre y usuario a la variable usuario EN OTRO ESPACIO DE MEMORIA
+		usuario.setPassword("1234");
+		listaUsuarios.add(usuario);			// y lo anyade a la lista de usuarios.
+		
+	}
+	
+	public ArrayList<Usuario> getListaUsuarios()
+	{
+		//este metodo tendria que hacer la consulta a la base de datos
+		return listaUsuarios;
+	}
+	
+	
+}

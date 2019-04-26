@@ -1,0 +1,14 @@
+package javabeans;
+
+/*
+ *  POJO/javabean
+ *  
+ *  convenio para la creacion objetos simples o POJO (Plain Old Java Object). No tienen herencia ni logica compleja.
+ *  
+ *  para hacer una clase javabean: atributos privados y metodos accesores y modificadores publicos: GETTER/SETTER 
+ */
+
+public class Persona 
+{
+	
+}

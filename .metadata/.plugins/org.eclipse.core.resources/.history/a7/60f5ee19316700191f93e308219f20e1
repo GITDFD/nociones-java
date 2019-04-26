@@ -1,0 +1,30 @@
+package modelo.negocio;
+
+import modelo.entidades.Usuario;
+
+/*
+ * esta capa se encarga del negocio vinculado a la aplicacion.
+ * la funcionalidad de la aplicacion.
+ * 
+ * daremos de alta todos los metodos que controlen usuario.
+ * 
+ * aqui tendremos la comunicacion con base de datos.
+ * 
+ */
+
+public class GestorUsuario {
+	
+	/**
+	 * Metodo que valida si un usuario esta registrado
+	 * 
+	 * @param user usuario a validar.
+	 * @return true si el usuario esta registrado
+	 */
+	
+	public boolean validarUsuario(Usuario user)
+	{
+		
+		return false;
+	}
+	
+}

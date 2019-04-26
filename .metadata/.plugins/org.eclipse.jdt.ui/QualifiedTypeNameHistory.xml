@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.invoke.SwitchPoint"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="entidades.Persona"/>
+<fullyQualifiedTypeName name="javabeans.Persona"/>
+<fullyQualifiedTypeName name="javax.annotation.Generated"/>
+<fullyQualifiedTypeName name="entidades.Empleado"/>
+<fullyQualifiedTypeName name="modelo.entidades.Usuario"/>
+<fullyQualifiedTypeName name="modelo.persistencia.DaoUsuario"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="modelo.negocio.GestorUsuario"/>
+</qualifiedTypeNameHistroy>

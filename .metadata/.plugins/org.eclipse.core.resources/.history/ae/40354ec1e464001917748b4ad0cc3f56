@@ -1,0 +1,43 @@
+
+public class MainFunciones {
+	// funcion principal: metodos de clase, no existe una funcion global, todos los metodos estan asociados a una clase.
+	
+	public static void main(String[] args) {
+	
+		// llamar a un metodo estatico se usa directamente el nombre del metodo y los parametros de entrada
+		saludo("Domin");
+		
+		int resultado = suma(2, 4);
+		System.out.println(resultado);
+	}
+	
+	// visibilidad: public
+	// estatico o dinamic
+	// retorno: void -> no devuelve nada
+	// nombre del metodo
+	// argumentos de entrada
+	
+	public static void saludo(String nombre)
+	{
+		System.out.println("Hola " + nombre + " como estas?");
+	}
+	
+	public static int suma(int num1, int num2)
+	{
+		int resultado = num1 + num2;
+		return resultado;
+	}
+	
+	public static int[] operaMat(int num1, int num2)
+	{
+		int[] resultados = new int[4];
+		resultados[0] = num1 + num2;
+		resultados[1] = num1 - num2;
+		resultados[2] = num1 * num2;
+		resultados[3] = num1 / num2;
+
+		return resultados;
+	}
+			
+}
+ 

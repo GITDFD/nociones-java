@@ -1,0 +1,52 @@
+import java.util.Arrays;
+
+public class MainFunciones {
+	// funcion principal: metodos de clase, no existe una funcion global, todos los metodos estan asociados a una clase.
+	
+	public static void main(String[] args) {
+	
+		// llamar a un metodo estatico se usa directamente el nombre del metodo y los parametros de entrada
+		saludo("Domin");
+		
+		// una clase solo devuelve un resultado
+		int resultado = suma(2, 4);
+		System.out.println(resultado);
+		
+		//para obtener multiples resultados de una clase hay que crearse un array, pero todos compartirian la misma picture.
+		double[] resultados = operaMat(2, 4); 
+		System.out.println(Arrays.toString(resultados)); //OJO para imprimir los resultados de un array.
+	}
+	
+	// visibilidad: public
+	// estatico o dinamic
+	// retorno: void -> no devuelve nada
+	// nombre del metodo
+	// argumentos de entrada
+	
+	public static void saludo(String nombre)
+	{
+		System.out.println("Hola " + nombre + " como estas?");
+	}
+	
+	public static int suma(int num1, int num2)
+	{
+		int resultado = num1 + num2;
+		return resultado;
+	}
+	
+	public static double[] operaMat(double num1, double num2)
+	{
+		double[] resultados = new double[4];
+		
+		resultados[0] = num1 + num2;
+		resultados[1] = num1 - num2;
+		resultados[2] = num1 * num2;
+		resultados[3] = num1 / num2;
+
+		return resultados;
+	}
+
+	//sobrecarga de metodos: cuando tiene un mismo nombre pero distinto tipo o numero de argumentos de entrada.
+	
+}
+ 

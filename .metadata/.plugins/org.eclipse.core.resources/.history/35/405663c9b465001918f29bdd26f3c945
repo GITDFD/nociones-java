@@ -1,0 +1,12 @@
+package entidades;
+
+// con "extends Empleado" digo que la clase Programador hereda de Empleado
+public class Programador extends Empleado{
+
+	//boton derecho, source, override/implement methods: para elegir el metodo que sabemos calcular
+	@Override
+	public double calcularSueldo() 
+	{
+		return getNomina();
+	}
+}

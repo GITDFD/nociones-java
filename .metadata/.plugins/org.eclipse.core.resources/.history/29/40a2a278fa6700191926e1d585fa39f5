@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- el scope en principio es singleton si no le decimos nada. el objeto es el mismo siempre (siempre sera Lisa)
+	     otro scope es prototipe: generara objetos nuevos cada vez que lo usas. -->
+	     
+	<bean id="Lisa" class="ejemplo1.Persona">
+		<property name="nombre" value="Lisa Simpson"></property>
+		<property name="edad" value="8"></property>
+		<property name="peso" value="40.5"></property>
+	</bean>
+
+</beans>
+

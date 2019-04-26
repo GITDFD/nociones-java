@@ -1,0 +1,8 @@
+package entidades;
+
+/* una interfaz tiene que estar bien definida y muy bien documentada.
+ * 
+ */
+public interface Movible {
+
+}

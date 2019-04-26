@@ -1,0 +1,10 @@
+
+public class MainSentenciasControl {
+	public static void main(String[] args) {
+		// condicionales
+		int numero=10;
+		// las llaves son opcionales y agrupan sentencias.
+		if (numero >= 10) { System.out.println("es mayor o igual a 10");}
+		else {System.out.println("es menor a 10");}
+	}
+}

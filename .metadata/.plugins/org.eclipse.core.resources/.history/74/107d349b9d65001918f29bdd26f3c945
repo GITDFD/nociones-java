@@ -1,0 +1,33 @@
+package entidades;
+
+public class Persona 
+{
+
+	// clase u objeto "Persona" que se compone de los atributos: nombre, edad y peso
+	// visibilidad:
+	// public: podemos acceder a un atributo desde cualquier otra clase
+	// private: solo puede acceder a un atributo desde la propia clase
+
+	public String nombre;
+	public int edad;
+	public double peso;
+	private int metros; // nadie puede acceder a esta variable desde fuera de esta clase.
+
+	//Todos los objetos tienen que tener un constructor.
+	// constructor por defecto:
+	public Persona()
+	{
+		
+	}
+	
+	public void andar(int metros)
+	{
+		this.metros += metros; // con this hacemos referencia al propio objeto original (fuera de la funcion) y no al metros declarado en el metodo o funcion
+	}
+	
+	public int getMetros()
+	{
+		return metros; // no hace falta usar this, pues en este metodo no hay ninguna otra variable que se llame igual. 
+	}
+	
+}

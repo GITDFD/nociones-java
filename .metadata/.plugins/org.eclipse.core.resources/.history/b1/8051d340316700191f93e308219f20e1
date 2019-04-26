@@ -1,0 +1,9 @@
+package modelo.persistencia;
+/*
+ * dao = data access object
+ * 
+ * capa de acceso a base de datos.
+ */
+public class DaoUsuario {
+
+}

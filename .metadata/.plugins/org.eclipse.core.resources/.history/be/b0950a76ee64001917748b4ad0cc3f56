@@ -1,0 +1,13 @@
+package main;
+
+//siempre que usemos una clae que no estoe en el paquete hay que importarla 
+import entidades.Persona;
+
+public class MainPOO {
+	public static void main(String[] args) {
+		Persona persona = new Persona(); 				// el new de Peronsa hace que se cree el objeto
+		persona.nombre = "Domingo Fernandez";
+		persona.edad = 45;
+		persona.peso = 95;
+	}
+}

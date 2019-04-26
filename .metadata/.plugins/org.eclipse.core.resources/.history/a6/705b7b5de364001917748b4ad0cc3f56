@@ -1,0 +1,20 @@
+
+public class MainFunciones {
+	// funcion principal: metodos de clase, no existe una funcion global, 
+	//todos los mtodos estan asociados a una clase.
+	public static void main(String[] args) {
+		saludo("Domin");
+	}
+	
+	// visibilidad: public
+	// estatico o dinamic
+	// retorno: void -> no devuelve nada
+	// nombre del metodo
+	// argumentos de entrada
+	
+	public static void saludo(String nombre)
+	{
+		System.out.println("Yo te saludo " + nombre);
+	}
+}
+ 

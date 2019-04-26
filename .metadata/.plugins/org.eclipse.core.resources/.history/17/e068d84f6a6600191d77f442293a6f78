@@ -1,0 +1,71 @@
+package entidades;
+
+
+// aunque no obligatorio usamos extends de Object
+// indicamos al objeto que se implemente con la interfaz usando "implements"
+// puede implentar + de una interfaz.
+
+public class Persona extends Object implements Movible
+{
+	
+	private String nombre;
+	private int edad;
+	private int posicion;
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	
+	public int getPosicion() {
+		return posicion;
+	}
+	public void setPosicion(int posicion) {
+		this.posicion = posicion;
+	}
+
+	
+	public Persona(String nombre, int edad, int posicion) {
+		super();
+		this.nombre = nombre;
+		this.edad = edad;
+		this.posicion = posicion;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", posicion=" + posicion + "]";
+	}
+	
+	//implementacion de los metodos creados en la interfaz
+	
+	@Override
+	public void moverseLento() {
+		// TODO Auto-generated method stub
+		System.out.println(" Soy " + nombre + " y me movere lento 5 metros");
+		posicion += 5;
+	}
+	@Override
+	public void moverseRapido() {
+		// TODO Auto-generated method stub
+		System.out.println(" Soy " + nombre + " y me movere rapido 20 metros");
+		posicion += 20;		
+	}
+	@Override
+	public int moverse(int metros) {
+		// TODO Auto-generated method stub
+		System.out.println(" Soy " + nombre + " y me movere fijo " + metros + " 5 metros");
+		posicion += metros;
+		return posicion;
+	}
+	
+	
+}

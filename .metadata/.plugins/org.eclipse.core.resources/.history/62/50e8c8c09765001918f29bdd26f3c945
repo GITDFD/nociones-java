@@ -1,0 +1,11 @@
+package entidades;
+
+public class Persona {
+
+	// clase u objeto "Persona" que se compone de los atributos: nombre, edad y peso
+	
+	public String nombre;
+	public int edad;
+	public double peso;
+	
+}

@@ -1,0 +1,54 @@
+package entidades;
+
+import java.util.ArrayList;
+
+public class MainHerencia 
+{
+	public static void main(String[] args) 
+	{
+		Empleado empleado = new Programador();
+		empleado.setNombre("Domingo");
+		empleado.setDni("089890923T");
+		empleado.setNomina(1250.50);
+		
+		JefeProyecto jefe = new JefeProyecto();
+		jefe.setNombre("Julian");
+		jefe.setDni("897876912D");
+		jefe.setNomina(2250.50);
+		jefe.setIncentivos(500);
+		
+		Director director = new Director();
+		director.setNombre("Alberto");
+		director.setDni("8901283771Q");
+		director.setNomina(3250.50);
+		
+		ArrayList<Empleado> listaEmpleados = new ArrayList <>();
+		listaEmpleados.add(empleado);
+		listaEmpleados.add(jefe);
+		
+		director.setListaEmpleados(listaEmpleados);
+
+		
+		// el tipo de variable es "ArrayList<Empleado>" y asi se llamara en otros sitios.
+		ArrayList<Empleado> empresa = new ArrayList <>();
+		empresa.add(empleado);
+		empresa.add(jefe);
+		empresa.add(director);
+	
+		calcularSueldo(empresa);
+		
+	}
+	
+	// calcular el salario de cada ocurrencia de la variable "empresa" que es del tipo "ArrayList<Empleado>"
+	public static void calcularSueldo(ArrayList<Empleado> empresa) 
+	{
+		double total =0;
+		for (Empleado i: empresa)
+		{
+			System.out.println(i.calcularSueldo());
+			total = total + i.calcularSueldo();
+		}
+		
+		System.out.println("total de la empresa " + total);
+	}
+}

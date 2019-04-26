@@ -1,0 +1,27 @@
+package entidades;
+
+public class JefeProyecto extends Empleado
+{
+
+	private double incentivos;
+
+	@Override
+	public String toString() {
+		return "JefeProyecto [incentivos=" + incentivos + "]";
+	}
+
+	public double getIncentivos() {
+		return incentivos;
+	}
+
+	public void setIncentivos(double incentivos) {
+		this.incentivos = incentivos;
+	}
+
+	@Override
+	public double calcularSueldo() {
+		return getNomina() + incentivos;
+	}
+	
+	
+}

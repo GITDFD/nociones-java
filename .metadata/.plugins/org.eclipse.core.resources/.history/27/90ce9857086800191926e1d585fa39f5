@@ -1,0 +1,38 @@
+package ejemplo2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainBatalla {
+
+	private static ApplicationContext contexto = new ClassPathXmlApplicationContext("beansGuerra.xml");
+
+	public static void main(String[] args) {
+		
+		/*
+		 *  clase guerrero tiene una dependencia con la clase espada,
+		 *  y necesitamos dar valores para ambas clases para que funcione los sysout  
+		 */
+		
+		Guerrero guerrero = new Guerrero();
+		guerrero.setNombre("Aquiles");
+		
+		Espada espada = new Espada();
+		espada.setTipo("catana");
+		
+		//inyectar dependencia ente clase guerreo y clase arma
+		Arco arco = new Arco();
+		arco.setTipo("140");
+		
+		guerrero.setArma(arco);
+		guerrero.atacar();
+			
+	/*
+	 * Con Spring y usando el beansGuerra para la gestion de objetos.
+	 */
+		
+		Guerrero guerrero2 = contexto.getBean("guerreo", Guerrero.class);
+		guerrero2.atacar();
+		
+	}
+}

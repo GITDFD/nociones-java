@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mi primera pagina</title>
+</head>
+	<body>
+		<h1> Bienvenido a la WEB chavales...</h1>
+		<!--Envio de parametros:
+		
+			 GET http://localhost/action?parametro=valor&...
+			 method: verbo, por defecto siempre sera GET.
+			 despues de local host llega el valor de "action"
+			 
+			 	ACTION=Servlet que va a procesar la info del formulario.
+			 
+			 despues con un "?" empezamos con los parametros de la request, se concatenan con "&".
+			 
+			 tras el header, tendremos:
+			 cookies=
+			 cliente=firefox (nagevador)
+			 body
+			 	en un GET va vacio
+			 	en un POST llevara los parametros del formulario. es mas seguro para enviar info sensible.
+		-->			
+		<form action="inventado" method="post">
+			Nombre: <input type="text" name="nombreUsuario"></input><br/><br/>
+			Password: <input type="password" name="passwordUsuario"></input><br/><br/>
+			<input type="submit" value="login"></input>
+		</form>
+	</body>
+</html>

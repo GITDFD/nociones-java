@@ -1,0 +1,6 @@
+
+public class MainCast {
+	public static void main(String[] args) {
+		double real = 5
+	}
+}

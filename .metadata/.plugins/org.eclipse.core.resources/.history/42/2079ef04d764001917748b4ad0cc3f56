@@ -1,0 +1,11 @@
+// comentario en una sola fila.
+
+/*
+ * comentario en valrias filas.
+ */
+
+// nomenclatura clases: UpperCamelCase
+
+public class MainHolaMundo {
+
+}

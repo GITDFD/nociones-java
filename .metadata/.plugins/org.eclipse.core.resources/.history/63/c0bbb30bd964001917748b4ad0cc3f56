@@ -1,0 +1,14 @@
+
+public class MainVariables {
+	public static void main(String[] args) {
+		//tipos de variables primitivas: el valor se almacena en la variable
+		
+		 int numeroNormal = 15;
+		 double importe = 12.34;	//importe con decimales
+		 long enteroGrande = 23_888_318_888L; 	// numeros grandes podemos poner "_" en un numero largo sin alterar el valor
+		 boolean encontrado = true; 
+		 
+		 System.out.println(enteroGrande);
+		//tipos de variables referencias: 
+	}
+}

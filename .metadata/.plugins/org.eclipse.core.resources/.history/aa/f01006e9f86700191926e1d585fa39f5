@@ -1,0 +1,20 @@
+package ejemplo1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main1 {
+	public static void main(String[] args) {
+		
+		//manera clasica de Java, pero Spring no lleva el control de este objeto.
+		Persona pers = new Persona();
+		pers.setNombre("Domingo");
+		pers.setEdad(45);
+		pers.setPeso(97.7);
+		
+		//crear el contenedor de objetos, usando el fichero configuracion de carpeta "resources"
+		//dara de alta la persona que esta configurada en beans.
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		
+	}
+}

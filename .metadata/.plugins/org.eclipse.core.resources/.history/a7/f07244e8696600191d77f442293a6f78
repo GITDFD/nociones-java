@@ -1,0 +1,9 @@
+package entidades;
+
+public class MainInterfaz {
+	public static void main(String[] args) {
+
+		// la interfaz se puede usar como tipo de variable.
+		ArrayList<Mobible> carrera 
+	}
+}

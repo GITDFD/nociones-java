@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mi primera pagina</title>
+</head>
+	<body>
+		<h1> Bienvenido a la WEB chavales...</h1>
+		<form action="">
+			Nombre: <input type="text" name="nombreUsuario"></input>
+			Password: <input type="text" name="passwordUsuario"></input>
+			<input type="submit" value="login"></input>
+		</form>
+	</body>
+</html>

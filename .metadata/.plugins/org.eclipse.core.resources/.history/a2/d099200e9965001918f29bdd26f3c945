@@ -1,0 +1,18 @@
+package entidades;
+
+public class Persona 
+{
+
+	// clase u objeto "Persona" que se compone de los atributos: nombre, edad y peso
+	
+	public String nombre;
+	public int edad;
+	public double peso;
+	public int metros; // nadie puede acceder a esta variable desde fuera de esta clase.
+	
+	public void andar(int metros)
+	{
+		this.metros += metros; // con this hacemos referencia al propio objeto original (fuera de la funcion) y no al metros declarado en el metodo o funcion
+	}
+	
+}

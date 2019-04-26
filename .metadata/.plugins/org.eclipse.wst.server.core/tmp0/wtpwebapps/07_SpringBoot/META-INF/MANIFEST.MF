@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: 07_SpringBoot
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: pue
+Implementation-Vendor-Id: es.sgt
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/07_SpringBoot
+Created-By: Maven Integration for Eclipse
+

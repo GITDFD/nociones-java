@@ -1,0 +1,9 @@
+package javabeans;
+
+public class JavaBeanMain 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

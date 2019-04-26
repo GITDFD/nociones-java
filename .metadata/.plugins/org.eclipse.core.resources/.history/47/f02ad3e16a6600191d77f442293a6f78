@@ -1,0 +1,16 @@
+package entidades;
+
+import java.util.ArrayList;
+
+public class MainInterfaz {
+	public static void main(String[] args) {
+
+		Movible velocidad = new Persona();
+		velocidad.moverseLento();
+			
+		
+		// la interfaz se puede usar como tipo de variable.
+		
+		ArrayList<Movible> carrera = new ArrayList<>();
+	}
+}

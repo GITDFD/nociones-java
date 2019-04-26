@@ -1,0 +1,7 @@
+
+public class MainCast {
+	public static void main(String[] args) {
+		double real = 5;
+		//int entero = real; --> da error de codigo, pues un tipo integer no admite valores de tipo real
+	}
+}
